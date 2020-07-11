@@ -1,0 +1,52 @@
+{
+  "author": {
+    "name": "ariesel"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "g": "^2.0.1",
+    "jquery": "^3.2.1"
+  },
+  "deprecated": false,
+  "description": "Drop files anywhere on your web page. Based on jQuery.",
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-latest": "^6.24.1",
+    "babelrc-rollup": "^3.0.0",
+    "browser-sync": "^2.18.12",
+    "npm-run-all": "^4.0.2",
+    "rollup": "^0.43.1",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^4.0.0"
+  },
+  "homepage": "",
+  "keywords": [
+    "dropzone",
+    "file",
+    "jquery-file-dropzone",
+    "drag-and-drop",
+    "javascript",
+    "jquery",
+    "jquery-plugin",
+    "component",
+    "frontend",
+    "web",
+    "upload"
+  ],
+  "license": "MIT",
+  "main": "dist/jquery-file-dropzone.js",
+  "name": "file-dropzone.jquery",
+  "repository": {},
+  "scripts": {
+    "build": "npm run build:full && npm run build:min",
+    "build:full": "rollup -c",
+    "build:min": "rollup -c --environment BUILD:min",
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:bs": "browser-sync start --config bsconfig.js",
+    "dev:rollup": "rollup -c -w"
+  },
+  "version": "1.0.11"
+}
