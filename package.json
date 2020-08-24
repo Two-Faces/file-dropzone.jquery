@@ -48,5 +48,5 @@
     "dev:bs": "browser-sync start --config bsconfig.js",
     "dev:rollup": "rollup -c -w"
   },
-  "version": "1.0.11"
+  "version": "1.0.12"
 }
