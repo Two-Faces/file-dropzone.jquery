@@ -15,7 +15,7 @@ const DEFAULTS = {
   multiple: true,
   paramName: 'file',
   accept: '',
-  capture: true,
+  capture: false,
   unique: false,
   noFolder: true,
   forceReplace: false,
